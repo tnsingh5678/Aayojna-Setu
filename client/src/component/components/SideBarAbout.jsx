@@ -51,7 +51,7 @@ export default function SideBarAbout({ menuItems }) {
         </div>
       )}
 
-      {!toggle && (
+      {/* {!toggle && (
         <div className="fixed top-4 left-4 z-50">
           <button
             className="p-2 rounded-full bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-300"
@@ -74,7 +74,7 @@ export default function SideBarAbout({ menuItems }) {
 
           </button>
         </div>
-      )}
+      )} */}
 
       <div className={`flex-1 transition-all duration-300 ${toggle ? 'ml-64' : ''}`}>
         <About />

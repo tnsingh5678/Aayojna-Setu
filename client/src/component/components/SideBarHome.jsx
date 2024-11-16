@@ -52,7 +52,7 @@ export default function SideBarHome({ menuItems }) {
       )}
 
  
-      {!toggle && (
+      {/* {!toggle && (
         <div className="fixed  z-50">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +70,7 @@ export default function SideBarHome({ menuItems }) {
             />
           </svg>
         </div>
-      )}
+      )} */}
 
   
       <div className="flex-1">

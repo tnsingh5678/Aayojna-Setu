@@ -29,7 +29,7 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row items-center justify-between mt-8">
                     <div className="text-center md:text-left">
                         <p className="text-gray-400 text-sm">
-                            © {new Date().getFullYear()} Gram Panchayat. All rights reserved.
+                            © {new Date().getFullYear()} Aayojna Setu. All rights reserved.
                         </p>
                     </div>
                 </div>

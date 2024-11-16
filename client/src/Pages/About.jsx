@@ -39,9 +39,27 @@ export default function About() {
 
     return (
         <>
+        <div className="flex justify-between bg-sky-400">
+      <div>
+      <img src="./AS_L2.jpg" className="h-[150px] w-[150px] bg-blue-600 p-1"></img>
+      </div>
+      <div>
+
+      <video
+      src="./TECHNOLOGY.mp4" 
+      className="h-[150px] w-[150px] bg-blue-600 p-1 object-cover"
+      autoPlay
+      loop
+      muted
+    />
+      </div>
+      
+    
+      </div>
         <div className="flex h-auto justify-between bg-orange-400">
         <div className="justify">
-      <img src="./AS_L2.jpg" className="h-[100px] w-[100px] bg-blue-600 p-1"></img></div>
+      {/* <img src="./AS_L2.jpg" className="h-[100px] w-[100px] bg-blue-600 p-1"></img> */}
+      </div>
         <HomeNav />
       </div>
             

@@ -14,6 +14,8 @@ import SideAbout from './data/SideAbout'
 import Contacts from './Pages/Contacts'
 import Schemes from './Pages/Schemes'
 import ApplicationForm from './Pages/Application'
+import SideBarHome from './component/components/SideBarHome'
+import SideBarAbout from './component/components/SideBarAbout'
 const App = () => {
   const{isAuthorized, setIsAuthorized, setUser} = useContext(Context);
   useEffect(()=>{
@@ -43,8 +45,8 @@ const App = () => {
         <Route path="/" element={<Register/>}></Route>
         <Route path="/singh" element={<Home />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/home" element={<Sidebardata/>}></Route>
-        <Route path="/About" element={<SideAbout/>}></Route>
+        <Route path="/home" element={<SideBarHome/>}></Route>
+        <Route path="/About" element={<SideBarAbout/>}></Route>
         <Route path='/contacts' element={<Contacts/>}></Route>
         <Route path='/schemes' element={<Schemes/>}></Route>
         <Route path='/Application' element={<ApplicationForm/>}></Route>

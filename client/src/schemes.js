@@ -488,6 +488,846 @@ export const schemes = [
       fullDetail: "National Renewable Energy Mission aims to promote the use of renewable energy sources such as solar, wind, and hydro power to reduce dependency on fossil fuels and enhance energy security.",
       url: "https://www.nre.gov.in/",
       categories: ["Poor", "Working Professional"]
-    }
+    },
+    {
+      "name": "Maulana Azad Scholarship",
+      "shortDetail": "Scholarship for minority students.",
+      "fullDetail": "The Maulana Azad National Scholarship Scheme provides financial assistance to girls belonging to minority communities for pursuing higher education. It aims to enhance the enrollment of minority girls in higher education.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["Minority"]
+  },
+  {
+      "name": "Post-Matric Scholarship for SC Students",
+      "shortDetail": "Financial aid for SC students pursuing higher education.",
+      "fullDetail": "This scheme provides financial assistance to Schedule Caste students studying in post-matriculation courses to promote education and reduce dropout rates.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["Schedule Caste"]
+  },
+  {
+      "name": "Post-Matric Scholarship for ST Students",
+      "shortDetail": "Scholarship for ST students in higher education.",
+      "fullDetail": "This scheme supports students belonging to Scheduled Tribes by providing financial assistance for their post-matriculation education, ensuring they can complete their studies.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["Schedule Tribe"]
+  },
+  {
+      "name": "Post-Matric Scholarship for OBC Students",
+      "shortDetail": "Financial assistance for OBC students.",
+      "fullDetail": "This scholarship is aimed at students from Other Backward Classes pursuing post-matric courses, providing them with financial aid to help complete their education.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["OBCs"]
+  },
+  {
+      "name": "Economic Weaker Sections (EWS) Scholarship",
+      "shortDetail": "Support for economically disadvantaged students.",
+      "fullDetail": "This scheme provides scholarships to students from Economically Weaker Sections to ensure access to higher education and support their academic pursuits.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["EWS"]
+  },
+  {
+      "name": "Scholarship for Minority Communities",
+      "shortDetail": "Financial assistance for students from minority backgrounds.",
+      "fullDetail": "This scheme provides scholarships to students belonging to various minority communities to promote education and reduce financial barriers.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["Minority"]
+  },
+  {
+      "name": "National Fellowship for SC Students",
+      "shortDetail": "Fellowship for SC students pursuing research.",
+      "fullDetail": "The National Fellowship for Scheduled Caste Students provides financial support for SC students pursuing M.Phil and Ph.D. courses.",
+      "url": "https://ugc.ac.in/",
+      "categories": ["Schedule Caste"]
+  },
+  {
+      "name": "National Fellowship for ST Students",
+      "shortDetail": "Fellowship for ST students pursuing higher studies.",
+      "fullDetail": "This scheme offers financial assistance to Scheduled Tribe students for pursuing M.Phil and Ph.D. courses to encourage higher education.",
+      "url": "https://ugc.ac.in/",
+      "categories": ["Schedule Tribe"]
+  },
+  {
+      "name": "Pre-Matric Scholarship for OBC Students",
+      "shortDetail": "Support for OBC students in primary and secondary education.",
+      "fullDetail": "This scheme provides financial assistance to OBC students from class 1 to class 10 to encourage them to continue their education.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["OBCs"]
+  },
+  {
+      "name": "Central Sector Scheme of Scholarship for College and University Students",
+      "shortDetail": "Scholarship for deserving students.",
+      "fullDetail": "This scheme offers scholarships to students from economically weaker sections who are pursuing higher education in colleges and universities.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["EWS"]
+  },
+  {
+      "name": "Post-Matric Scholarship for EWS",
+      "shortDetail": "Financial aid for EWS students.",
+      "fullDetail": "This scheme provides financial assistance to students from Economically Weaker Sections who are pursuing post-matriculation courses.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["EWS"]
+  },
+  {
+      "name": "Mahatma Jyotiba Phule Scholarship",
+      "shortDetail": "Financial aid for OBC and SC/ST students.",
+      "fullDetail": "This scholarship supports OBC, SC, and ST students in pursuing higher education to improve their educational outcomes.",
+      "url": "https://www.maharashtra.gov.in/",
+      "categories": ["OBCs", "Schedule Caste", "Schedule Tribe"]
+  },
+  {
+      "name": "Rajasthan Post-Matric Scholarship",
+      "shortDetail": "Scholarship for SC/ST and OBC students in Rajasthan.",
+      "fullDetail": "This scheme provides financial assistance to SC/ST and OBC students in Rajasthan for post-matric studies.",
+      "url": "https://sje.rajasthan.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe", "OBCs"]
+  },
+  {
+      "name": "Scholarship for EWS Students in Delhi",
+      "shortDetail": "Support for EWS students in Delhi.",
+      "fullDetail": "This scholarship scheme offers financial support to economically weaker sections of students in Delhi to continue their education.",
+      "url": "https://edudel.nic.in/",
+      "categories": ["EWS"]
+  },
+  {
+      "name": "Post Matric Scholarship for Minority Students",
+      "shortDetail": "Financial aid for minority students.",
+      "fullDetail": "This scheme provides post-matric scholarships to students from minority communities to help them pursue higher education.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["Minority"]
+  },
+  {
+      "name": "Dr. Ambedkar Post-Matric Scholarship",
+      "shortDetail": "Scholarship for SC students in Maharashtra.",
+      "fullDetail": "This scholarship provides financial assistance to SC students in Maharashtra for their post-matric education.",
+      "url": "https://www.maharashtra.gov.in/",
+      "categories": ["Schedule Caste"]
+  },
+  {
+      "name": "Punjab Post-Matric Scholarship for SC Students",
+      "shortDetail": "Support for SC students in Punjab.",
+      "fullDetail": "This scheme provides scholarships to Schedule Caste students in Punjab for post-matric studies to encourage education.",
+      "url": "http://punjabscholarships.gov.in/",
+      "categories": ["Schedule Caste"]
+  },
+  {
+      "name": "Uttar Pradesh Scholarship for SC/ST/OBC Students",
+      "shortDetail": "Financial aid for students in UP.",
+      "fullDetail": "This scheme provides scholarships to SC, ST, and OBC students in Uttar Pradesh for various educational pursuits.",
+      "url": "http://scholarship.up.nic.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe", "OBCs"]
+  },
+  {
+      "name": "Karnataka Post-Matric Scholarship for SC/ST Students",
+      "shortDetail": "Support for SC/ST students in Karnataka.",
+      "fullDetail": "This scholarship provides financial assistance to SC and ST students in Karnataka for post-matric studies.",
+      "url": "https://backwardclasses.karnataka.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe"]
+  },
+  {
+      "name": "West Bengal Pre-Matric Scholarship",
+      "shortDetail": "Scholarship for minority and OBC students.",
+      "fullDetail": "This scheme offers financial assistance to minority and OBC students for their pre-matric education.",
+      "url": "http://wbmdfc.org/",
+      "categories": ["Minority", "OBCs"]
+  },
+  {
+      "name": "Telangana Post-Matric Scholarship for SC/ST Students",
+      "shortDetail": "Financial support for SC/ST students.",
+      "fullDetail": "This scheme provides financial assistance to SC and ST students in Telangana for post-matric studies.",
+      "url": "http://tsbcwelfare.telangana.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe"]
+  },
+  {
+      "name": "Assam Post-Matric Scholarship",
+      "shortDetail": "Scholarship for SC/ST/OBC students in Assam.",
+      "fullDetail": "This scheme offers financial assistance to SC, ST, and OBC students in Assam for post-matric education.",
+      "url": "http://assam.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe", "OBCs"]
+  },
+  {
+      "name": "Jharkhand Post-Matric Scholarship",
+      "shortDetail": "Support for SC/ST/OBC students in Jharkhand.",
+      "fullDetail": "This scholarship provides financial aid to SC, ST, and OBC students in Jharkhand for their post-matric studies.",
+      "url": "http://jhrc.jharkhand.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe", "OBCs"]
+  },
+  {
+      "name": "National Merit Scholarship",
+      "shortDetail": "Scholarship for meritorious students.",
+      "fullDetail": "This scholarship scheme provides financial assistance to students with outstanding academic performance from economically weaker sections.",
+      "url": "https://scholarships.gov.in/",
+      "categories": ["EWS"]
+  },
+  {
+      "name": "Madhya Pradesh Post-Matric Scholarship",
+      "shortDetail": "Financial aid for SC/ST/OBC students.",
+      "fullDetail": "This scheme provides scholarships to SC, ST, and OBC students in Madhya Pradesh for post-matric studies.",
+      "url": "https://mpwelfare.nic.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe", "OBCs"]
+  },
+  {
+      "name": "Chhattisgarh Post-Matric Scholarship",
+      "shortDetail": "Support for SC/ST/OBC students in Chhattisgarh.",
+      "fullDetail": "This scholarship offers financial assistance to SC, ST, and OBC students in Chhattisgarh for their educational needs.",
+      "url": "http://cgsocialwelfare.nic.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe", "OBCs"]
+  },
+  {
+      "name": "Haryana Post-Matric Scholarship for SC Students",
+      "shortDetail": "Scholarship for SC students in Haryana.",
+      "fullDetail": "This scheme provides financial support to SC students in Haryana for their post-matric education.",
+      "url": "http://haryanawelfare.gov.in/",
+      "categories": ["Schedule Caste"]
+  },
+  {
+      "name": "Maharashtra Post-Matric Scholarship for OBC Students",
+      "shortDetail": "Support for OBC students in Maharashtra.",
+      "fullDetail": "This scholarship provides financial assistance to OBC students in Maharashtra for their post-matric studies.",
+      "url": "http://www.maharashtra.gov.in/",
+      "categories": ["OBCs"]
+  },
+  {
+      "name": "Goa Post-Matric Scholarship",
+      "shortDetail": "Financial aid for SC/ST students.",
+      "fullDetail": "This scheme offers scholarships to SC and ST students in Goa for their post-matric education.",
+      "url": "http://goa.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe"]
+  },
+  {
+      "name": "Bihar Post-Matric Scholarship for SC/ST Students",
+      "shortDetail": "Scholarship for SC/ST students in Bihar.",
+      "fullDetail": "This scheme provides financial assistance to SC and ST students in Bihar for their post-matric studies.",
+      "url": "https://www.bihar.gov.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe"]
+  },
+  {
+      "name": "National Scheme of Incentive to Girls for Secondary Education",
+      "shortDetail": "Incentive for girls from SC/ST communities.",
+      "fullDetail": "This scheme provides financial incentives to girls from SC and ST communities to encourage them to pursue secondary education.",
+      "url": "http://www.ncert.nic.in/",
+      "categories": ["Schedule Caste", "Schedule Tribe"]
+  },
+  {
+      "name": "Prerana Scholarship for OBC Students",
+      "shortDetail": "Support for OBC students in various states.",
+      "fullDetail": "This scholarship provides financial assistance to OBC students for pursuing higher education in various states.",
+      "url": "https://www.prerana.gov.in/",
+      "categories": ["OBCs"]
+  },
+  {
+      "name": "State Level Scholarship for EWS Students",
+      "shortDetail": "Support for EWS students at the state level.",
+      "fullDetail": "This scheme offers scholarships to students from Economically Weaker Sections at the state level to promote higher education.",
+      "url": "http://www.state.gov.in/",
+      "categories": ["EWS"]
+  },
+  {
+    "name": "National Overseas Scholarship for SC/ST Students",
+    "shortDetail": "Scholarship for SC/ST students for studying abroad.",
+    "fullDetail": "This scheme provides financial assistance to SC and ST students for pursuing higher studies abroad, covering tuition fees and living expenses.",
+    "url": "http://www.ugc.ac.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Post-Matric Scholarship for Disabled Students",
+    "shortDetail": "Support for disabled students.",
+    "fullDetail": "This scheme provides financial aid to disabled students for pursuing post-matric studies, ensuring equal educational opportunities.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["Disabled"]
+},
+{
+    "name": "National Fellowship for OBC Students",
+    "shortDetail": "Fellowship for OBC students pursuing research.",
+    "fullDetail": "This fellowship provides financial support to OBC students for pursuing M.Phil and Ph.D. courses to promote higher education.",
+    "url": "https://ugc.ac.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Post-Matric Scholarship for Minority Students",
+    "shortDetail": "Financial aid for minority students.",
+    "fullDetail": "This scheme provides scholarships to minority community students for pursuing post-matric education, encouraging them to continue their studies.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["Minority"]
+},
+{
+    "name": "Central Sector Scholarship for EWS Students",
+    "shortDetail": "Scholarship for EWS students in higher education.",
+    "fullDetail": "This scholarship provides financial assistance to economically weaker section students pursuing higher education in colleges and universities.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "State Merit Scholarship",
+    "shortDetail": "Merit-based scholarship for students.",
+    "fullDetail": "This state-level scholarship is awarded to students based on their academic performance to promote higher education.",
+    "url": "http://www.state.gov.in/",
+    "categories": ["Merit"]
+},
+{
+    "name": "National Scheme for Incentive to Girls",
+    "shortDetail": "Incentive for girls from SC/ST communities.",
+    "fullDetail": "This scheme encourages girls from SC and ST communities to pursue education by providing financial incentives.",
+    "url": "http://www.ncert.nic.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Scholarship for OBC Students in Maharashtra",
+    "shortDetail": "Support for OBC students in Maharashtra.",
+    "fullDetail": "This scheme provides scholarships to OBC students in Maharashtra to promote higher education.",
+    "url": "http://www.maharashtra.gov.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Post-Matric Scholarship for SC Students in Kerala",
+    "shortDetail": "Scholarship for SC students in Kerala.",
+    "fullDetail": "This scheme provides financial assistance to SC students in Kerala for post-matric studies to ensure educational access.",
+    "url": "https://welfare.kerala.gov.in/",
+    "categories": ["Schedule Caste"]
+},
+{
+    "name": "Integrated Child Development Services (ICDS)",
+    "shortDetail": "Support for children from disadvantaged backgrounds.",
+    "fullDetail": "This program aims to provide food, preschool education, and primary healthcare to children from disadvantaged backgrounds.",
+    "url": "http://wcd.nic.in/",
+    "categories": ["Children"]
+},
+{
+    "name": "Chief Minister's Scholarship Scheme for SC/ST Students",
+    "shortDetail": "Scholarship for SC/ST students in the state.",
+    "fullDetail": "This scheme provides scholarships to SC and ST students in the state to promote higher education.",
+    "url": "http://www.state.gov.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Dr. Ambedkar Post-Matric Scholarship for OBC Students",
+    "shortDetail": "Support for OBC students in Maharashtra.",
+    "fullDetail": "This scholarship provides financial assistance to OBC students in Maharashtra for their post-matric studies.",
+    "url": "http://www.maharashtra.gov.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Delhi Government Post-Matric Scholarship",
+    "shortDetail": "Financial aid for SC/ST students in Delhi.",
+    "fullDetail": "This scheme provides scholarships to SC and ST students in Delhi for post-matric studies to encourage educational achievement.",
+    "url": "https://edudel.nic.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "National Scholarship for Higher Education",
+    "shortDetail": "Support for students from economically weaker sections.",
+    "fullDetail": "This scholarship aims to provide financial assistance to students from economically weaker sections pursuing higher education.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "Bihar Scholarship for Minority Students",
+    "shortDetail": "Support for minority students in Bihar.",
+    "fullDetail": "This scheme provides financial assistance to minority community students in Bihar for pursuing higher education.",
+    "url": "https://www.bihar.gov.in/",
+    "categories": ["Minority"]
+},
+{
+    "name": "Post-Matric Scholarship for SC/ST Students in Odisha",
+    "shortDetail": "Financial aid for SC/ST students in Odisha.",
+    "fullDetail": "This scheme provides scholarships to SC and ST students in Odisha for their post-matric studies.",
+    "url": "https://odishawelfare.gov.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "State Level Scholarship for OBC Students",
+    "shortDetail": "Support for OBC students at the state level.",
+    "fullDetail": "This scheme offers scholarships to OBC students at the state level to promote their educational pursuits.",
+    "url": "http://www.state.gov.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Madhya Pradesh Scholarship for SC/ST Students",
+    "shortDetail": "Financial aid for SC/ST students in Madhya Pradesh.",
+    "fullDetail": "This scheme provides scholarships to SC and ST students in Madhya Pradesh to support their educational needs.",
+    "url": "https://mpwelfare.nic.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Karnataka Scholarship for Minority Students",
+    "shortDetail": "Support for minority students in Karnataka.",
+    "fullDetail": "This scheme provides financial assistance to minority community students in Karnataka for higher education.",
+    "url": "https://karnatakawelfare.gov.in/",
+    "categories": ["Minority"]
+},
+{
+    "name": "Post-Matric Scholarship for EWS Students",
+    "shortDetail": "Financial aid for EWS students.",
+    "fullDetail": "This scheme offers scholarships to Economically Weaker Section students for their post-matric studies.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "Scholarship for Children of Beedi Workers",
+    "shortDetail": "Support for children of beedi workers.",
+    "fullDetail": "This scholarship provides financial assistance to the children of beedi workers to promote their education.",
+    "url": "http://www.labour.gov.in/",
+    "categories": ["Working Professional"]
+},
+{
+    "name": "Financial Assistance for Divyang Students",
+    "shortDetail": "Support for differently-abled students.",
+    "fullDetail": "This scheme offers financial assistance to differently-abled students to ensure they have access to quality education.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["Disabled"]
+},
+{
+    "name": "National Scholarship for Single Girl Child",
+    "shortDetail": "Scholarship for single girl children.",
+    "fullDetail": "This scheme provides financial assistance to single girl children to encourage their education.",
+    "url": "http://www.wcd.nic.in/",
+    "categories": ["Women"]
+},
+{
+    "name": "Scholarship for Tribal Students in Maharashtra",
+    "shortDetail": "Support for tribal students.",
+    "fullDetail": "This scholarship provides financial assistance to tribal students in Maharashtra for their educational needs.",
+    "url": "http://www.maharashtra.gov.in/",
+    "categories": ["Schedule Tribe"]
+},
+{
+    "name": "Post-Matric Scholarship for SC/ST Students in Jharkhand",
+    "shortDetail": "Financial aid for SC/ST students in Jharkhand.",
+    "fullDetail": "This scheme provides scholarships to SC and ST students in Jharkhand for post-matric studies.",
+    "url": "http://jhrc.jharkhand.gov.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Scholarship for Girls from EWS Families",
+    "shortDetail": "Financial aid for girls from economically weaker sections.",
+    "fullDetail": "This scheme supports girls from EWS families to pursue their education through scholarships.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "Prerna Scholarship for SC/ST Students",
+    "shortDetail": "Support for SC/ST students in higher education.",
+    "fullDetail": "This scholarship provides financial assistance to SC and ST students for pursuing higher education.",
+    "url": "https://www.prerana.gov.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Uttar Pradesh Scholarship for Minority Students",
+    "shortDetail": "Financial aid for minority students in UP.",
+    "fullDetail": "This scheme offers scholarships to minority students in Uttar Pradesh for pursuing higher education.",
+    "url": "http://scholarship.up.nic.in/",
+    "categories": ["Minority"]
+},
+{
+    "name": "Tamil Nadu Post-Matric Scholarship for SC/ST Students",
+    "shortDetail": "Support for SC/ST students in Tamil Nadu.",
+    "fullDetail": "This scheme provides financial assistance to SC and ST students in Tamil Nadu for their post-matric studies.",
+    "url": "http://www.tn.gov.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Andhra Pradesh Post-Matric Scholarship for OBC Students",
+    "shortDetail": "Support for OBC students in Andhra Pradesh.",
+    "fullDetail": "This scheme offers scholarships to OBC students in Andhra Pradesh for post-matric studies.",
+    "url": "http://ap.gov.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Scholarship for Children of Farmers",
+    "shortDetail": "Financial aid for children of farmers.",
+    "fullDetail": "This scheme provides financial assistance to children of farmers to support their education.",
+    "url": "http://www.agriculture.gov.in/",
+    "categories": ["Working Professional"]
+},
+{
+    "name": "West Bengal Scholarship for OBC Students",
+    "shortDetail": "Support for OBC students in West Bengal.",
+    "fullDetail": "This scholarship scheme provides financial assistance to OBC students in West Bengal for pursuing higher education.",
+    "url": "http://wbmdfc.org/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Kerala Scholarship for EWS Students",
+    "shortDetail": "Financial aid for EWS students in Kerala.",
+    "fullDetail": "This scheme provides scholarships to EWS students in Kerala for pursuing higher education.",
+    "url": "https://welfare.kerala.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "Scholarship for Children of Construction Workers",
+    "shortDetail": "Support for children of construction workers.",
+    "fullDetail": "This scheme offers financial assistance to children of construction workers to promote their education.",
+    "url": "http://www.labour.gov.in/",
+    "categories": ["Working Professional"]
+},
+{
+    "name": "Post-Matric Scholarship for EWS Students in Maharashtra",
+    "shortDetail": "Financial aid for EWS students in Maharashtra.",
+    "fullDetail": "This scholarship provides financial assistance to EWS students in Maharashtra for pursuing post-matric education.",
+    "url": "http://www.maharashtra.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "National Fellowship for SC Students",
+    "shortDetail": "Fellowship for SC students pursuing higher studies.",
+    "fullDetail": "This fellowship provides financial support to SC students pursuing M.Phil and Ph.D. courses to promote their education.",
+    "url": "https://ugc.ac.in/",
+    "categories": ["Schedule Caste"]
+},
+{
+    "name": "Scholarship for Children of Daily Wage Workers",
+    "shortDetail": "Support for children of daily wage workers.",
+    "fullDetail": "This scheme offers financial assistance to children of daily wage workers to ensure they can continue their education.",
+    "url": "http://www.labour.gov.in/",
+    "categories": ["Working Professional"]
+},
+{
+    "name": "Scholarship for Daughters of Ex-Servicemen",
+    "shortDetail": "Support for daughters of ex-servicemen.",
+    "fullDetail": "This scheme provides financial assistance to daughters of ex-servicemen for their education.",
+    "url": "http://www.desw.gov.in/",
+    "categories": ["Ex-Servicemen"]
+},
+{
+    "name": "Scholarship for Vocational Students",
+    "shortDetail": "Support for students in vocational courses.",
+    "fullDetail": "This scholarship provides financial assistance to students enrolled in vocational courses to promote skill development.",
+    "url": "http://www.skilldevelopment.gov.in/",
+    "categories": ["Vocational"]
+},
+{
+    "name": "Uttar Pradesh Scholarship for SC Students",
+    "shortDetail": "Financial aid for SC students in UP.",
+    "fullDetail": "This scheme offers scholarships to SC students in Uttar Pradesh for pursuing higher education.",
+    "url": "http://scholarship.up.nic.in/",
+    "categories": ["Schedule Caste"]
+},
+{
+    "name": "Post-Matric Scholarship for EWS Students in Gujarat",
+    "shortDetail": "Financial aid for EWS students in Gujarat.",
+    "fullDetail": "This scheme provides financial assistance to EWS students in Gujarat for post-matric studies.",
+    "url": "http://gujarat.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "National Skill Development Scholarship",
+    "shortDetail": "Support for skill development courses.",
+    "fullDetail": "This scholarship offers financial assistance to students enrolled in skill development programs to enhance employability.",
+    "url": "http://www.skilldevelopment.gov.in/",
+    "categories": ["Vocational"]
+},
+{
+    "name": "Bihar Scholarship for SC/ST Students",
+    "shortDetail": "Support for SC/ST students in Bihar.",
+    "fullDetail": "This scheme provides financial assistance to SC and ST students in Bihar for pursuing higher education.",
+    "url": "https://www.bihar.gov.in/",
+    "categories": ["Schedule Caste", "Schedule Tribe"]
+},
+{
+    "name": "Delhi Post-Matric Scholarship for Minority Students",
+    "shortDetail": "Financial aid for minority students in Delhi.",
+    "fullDetail": "This scheme offers scholarships to minority students in Delhi for pursuing higher education.",
+    "url": "https://edudel.nic.in/",
+    "categories": ["Minority"]
+},
+{
+    "name": "Scholarship for Research Students",
+    "shortDetail": "Support for research students.",
+    "fullDetail": "This scheme provides financial assistance to research students for their academic pursuits.",
+    "url": "http://www.ugc.ac.in/",
+    "categories": ["Research"]
+},
+{
+    "name": "Post-Matric Scholarship for ST Students in Rajasthan",
+    "shortDetail": "Financial aid for ST students in Rajasthan.",
+    "fullDetail": "This scheme provides scholarships to ST students in Rajasthan for post-matric studies.",
+    "url": "http://sje.rajasthan.gov.in/",
+    "categories": ["Schedule Tribe"]
+},
+{
+    "name": "National Scholarship for Students with Disabilities",
+    "shortDetail": "Support for students with disabilities.",
+    "fullDetail": "This scholarship provides financial assistance to students with disabilities to ensure equal educational opportunities.",
+    "url": "https://scholarships.gov.in/",
+    "categories": ["Disabled"]
+},
+{
+    "name": "Madhya Pradesh Scholarship for OBC Students",
+    "shortDetail": "Financial aid for OBC students in Madhya Pradesh.",
+    "fullDetail": "This scheme provides scholarships to OBC students in Madhya Pradesh for higher education.",
+    "url": "https://mpwelfare.nic.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Scholarship for Children of RTE Beneficiaries",
+    "shortDetail": "Support for children of RTE beneficiaries.",
+    "fullDetail": "This scheme offers financial assistance to children whose parents benefit from the Right to Education Act.",
+    "url": "http://www.education.gov.in/",
+    "categories": ["RTE"]
+},
+{
+    "name": "Uttar Pradesh Post-Matric Scholarship for ST Students",
+    "shortDetail": "Financial aid for ST students in UP.",
+    "fullDetail": "This scheme offers scholarships to ST students in Uttar Pradesh for pursuing higher education.",
+    "url": "http://scholarship.up.nic.in/",
+    "categories": ["Schedule Tribe"]
+},
+{
+    "name": "Scholarship for Students in Government Schools",
+    "shortDetail": "Support for students in government schools.",
+    "fullDetail": "This scheme provides financial assistance to students studying in government schools to encourage their education.",
+    "url": "http://www.education.gov.in/",
+    "categories": ["General"]
+},
+{
+    "name": "Post-Matric Scholarship for OBC Students in Tamil Nadu",
+    "shortDetail": "Support for OBC students in Tamil Nadu.",
+    "fullDetail": "This scheme provides scholarships to OBC students in Tamil Nadu for post-matric studies.",
+    "url": "http://www.tn.gov.in/",
+    "categories": ["OBCs"]
+},
+{
+    "name": "Scholarship for EWS Students in Rajasthan",
+    "shortDetail": "Financial aid for EWS students in Rajasthan.",
+    "fullDetail": "This scheme offers scholarships to EWS students in Rajasthan to support their educational pursuits.",
+    "url": "http://rajasthan.gov.in/",
+    "categories": ["EWS"]
+},
+{
+    "name": "Scholarship for Higher Education in Science and Technology",
+    "shortDetail": "Support for students in science and technology fields.",
+    "fullDetail": "This scheme provides financial assistance to students pursuing higher education in science and technology.",
+    "url": "http://www.dst.gov.in/",
+    "categories": ["Science and Technology"]
+},
+{
+  "name": "Scholarship for Children of Anganwadi Workers",
+  "shortDetail": "Support for children of Anganwadi workers.",
+  "fullDetail": "This scheme provides financial assistance to children of Anganwadi workers to promote their education.",
+  "url": "http://www.wcd.nic.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Post-Matric Scholarship for SC Students in Punjab",
+  "shortDetail": "Financial aid for SC students in Punjab.",
+  "fullDetail": "This scheme offers scholarships to SC students in Punjab for pursuing post-matric studies.",
+  "url": "http://punjab.gov.in/",
+  "categories": ["Schedule Caste"]
+},
+{
+  "name": "Andhra Pradesh Scholarship for EWS Students",
+  "shortDetail": "Financial aid for EWS students in Andhra Pradesh.",
+  "fullDetail": "This scheme provides scholarships to EWS students in Andhra Pradesh for higher education.",
+  "url": "http://ap.gov.in/",
+  "categories": ["EWS"]
+},
+{
+  "name": "National Fellowship for ST Students",
+  "shortDetail": "Fellowship for ST students pursuing research.",
+  "fullDetail": "This fellowship provides financial support to ST students for pursuing M.Phil and Ph.D. courses.",
+  "url": "https://ugc.ac.in/",
+  "categories": ["Schedule Tribe"]
+},
+{
+  "name": "Scholarship for Children of Migrant Workers",
+  "shortDetail": "Support for children of migrant workers.",
+  "fullDetail": "This scheme offers financial assistance to children of migrant workers to ensure they continue their education.",
+  "url": "http://www.labour.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Post-Matric Scholarship for OBC Students in Jharkhand",
+  "shortDetail": "Financial aid for OBC students in Jharkhand.",
+  "fullDetail": "This scheme provides scholarships to OBC students in Jharkhand for their educational needs.",
+  "url": "http://jhrc.jharkhand.gov.in/",
+  "categories": ["OBCs"]
+},
+{
+  "name": "Scholarship for Girl Students in Delhi",
+  "shortDetail": "Support for girl students in Delhi.",
+  "fullDetail": "This scheme provides financial assistance to girl students in Delhi to promote their education.",
+  "url": "https://edudel.nic.in/",
+  "categories": ["Women"]
+},
+{
+  "name": "Scholarship for Children of Railway Employees",
+  "shortDetail": "Financial aid for children of railway employees.",
+  "fullDetail": "This scheme provides scholarships to children of railway employees to support their education.",
+  "url": "http://www.indianrailways.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Madhya Pradesh Post-Matric Scholarship for EWS Students",
+  "shortDetail": "Support for EWS students in Madhya Pradesh.",
+  "fullDetail": "This scheme provides scholarships to EWS students in Madhya Pradesh for their higher education.",
+  "url": "https://mpwelfare.nic.in/",
+  "categories": ["EWS"]
+},
+{
+  "name": "Scholarship for Research in Arts and Humanities",
+  "shortDetail": "Support for research students in arts and humanities.",
+  "fullDetail": "This scholarship provides financial assistance to research students in the fields of arts and humanities.",
+  "url": "http://www.ugc.ac.in/",
+  "categories": ["Research"]
+},
+{
+  "name": "Scholarship for Children of Defence Personnel",
+  "shortDetail": "Support for children of defence personnel.",
+  "fullDetail": "This scheme offers financial assistance to children of defence personnel to promote their education.",
+  "url": "http://www.desw.gov.in/",
+  "categories": ["Ex-Servicemen"]
+},
+{
+  "name": "Chhattisgarh Scholarship for Minority Students",
+  "shortDetail": "Financial aid for minority students in Chhattisgarh.",
+  "fullDetail": "This scheme provides scholarships to minority community students in Chhattisgarh for higher education.",
+  "url": "http://cgsocialwelfare.nic.in/",
+  "categories": ["Minority"]
+},
+{
+  "name": "Scholarship for BPL Families",
+  "shortDetail": "Support for students from BPL families.",
+  "fullDetail": "This scheme provides financial assistance to students from Below Poverty Line families to promote education.",
+  "url": "http://www.msp.gov.in/",
+  "categories": ["EWS"]
+},
+{
+  "name": "Post-Matric Scholarship for SC Students in Uttarakhand",
+  "shortDetail": "Financial aid for SC students in Uttarakhand.",
+  "fullDetail": "This scheme provides scholarships to SC students in Uttarakhand for pursuing post-matric education.",
+  "url": "http://uk.gov.in/",
+  "categories": ["Schedule Caste"]
+},
+{
+  "name": "Scholarship for Physically Challenged Students",
+  "shortDetail": "Financial assistance for physically challenged students.",
+  "fullDetail": "This scheme provides scholarships to physically challenged students to ensure equal educational opportunities.",
+  "url": "https://scholarships.gov.in/",
+  "categories": ["Disabled"]
+},
+{
+  "name": "National Scheme for Incentive to Girls for Technical Education",
+  "shortDetail": "Incentives for girls pursuing technical education.",
+  "fullDetail": "This scheme offers financial incentives to girls pursuing technical education to encourage their enrollment.",
+  "url": "http://www.ncert.nic.in/",
+  "categories": ["Women"]
+},
+{
+  "name": "Scholarship for Children of Autowallahs",
+  "shortDetail": "Support for children of auto drivers.",
+  "fullDetail": "This scheme provides financial assistance to children of auto drivers to promote their education.",
+  "url": "http://www.transport.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Post-Matric Scholarship for EWS Students in Punjab",
+  "shortDetail": "Financial aid for EWS students in Punjab.",
+  "fullDetail": "This scheme provides scholarships to EWS students in Punjab for pursuing higher education.",
+  "url": "http://punjab.gov.in/",
+  "categories": ["EWS"]
+},
+{
+  "name": "Scholarship for Women in STEM",
+  "shortDetail": "Support for women pursuing STEM fields.",
+  "fullDetail": "This scheme provides financial assistance to women pursuing education in Science, Technology, Engineering, and Mathematics.",
+  "url": "http://www.wcd.nic.in/",
+  "categories": ["Women"]
+},
+{
+  "name": "Haryana Post-Matric Scholarship for ST Students",
+  "shortDetail": "Financial aid for ST students in Haryana.",
+  "fullDetail": "This scheme provides scholarships to ST students in Haryana for their post-matric education.",
+  "url": "http://haryanawelfare.gov.in/",
+  "categories": ["Schedule Tribe"]
+},
+{
+  "name": "Scholarship for Children of Unorganized Workers",
+  "shortDetail": "Support for children of unorganized sector workers.",
+  "fullDetail": "This scheme offers financial assistance to children of unorganized workers to promote their education.",
+  "url": "http://www.labour.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Scholarship for Backward Class Students",
+  "shortDetail": "Support for backward class students.",
+  "fullDetail": "This scheme provides financial assistance to students from backward classes to promote their education.",
+  "url": "http://www.state.gov.in/",
+  "categories": ["OBCs"]
+},
+{
+  "name": "Scholarship for Indigenous Students",
+  "shortDetail": "Support for indigenous students.",
+  "fullDetail": "This scheme provides financial assistance to indigenous students to ensure equal educational opportunities.",
+  "url": "http://www.north-east.gov.in/",
+  "categories": ["Schedule Tribe"]
+},
+{
+  "name": "Scholarship for Differently-Abled Children",
+  "shortDetail": "Support for differently-abled children.",
+  "fullDetail": "This scheme offers financial assistance to differently-abled children to promote their education.",
+  "url": "https://scholarships.gov.in/",
+  "categories": ["Disabled"]
+},
+{
+  "name": "Post-Matric Scholarship for EWS Students in Karnataka",
+  "shortDetail": "Financial aid for EWS students in Karnataka.",
+  "fullDetail": "This scheme provides scholarships to EWS students in Karnataka for their higher education.",
+  "url": "http://karnatakawelfare.gov.in/",
+  "categories": ["EWS"]
+},
+{
+  "name": "Scholarship for Children of Street Vendors",
+  "shortDetail": "Support for children of street vendors.",
+  "fullDetail": "This scheme provides financial assistance to children of street vendors to ensure they can continue their education.",
+  "url": "http://www.msp.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Post-Matric Scholarship for OBC Students in Rajasthan",
+  "shortDetail": "Support for OBC students in Rajasthan.",
+  "fullDetail": "This scheme provides scholarships to OBC students in Rajasthan for their post-matric studies.",
+  "url": "http://rajasthan.gov.in/",
+  "categories": ["OBCs"]
+},
+{
+  "name": "Scholarship for Children of Fishers",
+  "shortDetail": "Support for children of fishing community.",
+  "fullDetail": "This scheme offers financial assistance to children of fishers to promote their education.",
+  "url": "http://www.fisheries.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "Scholarship for SC Students in Odisha",
+  "shortDetail": "Financial aid for SC students in Odisha.",
+  "fullDetail": "This scheme provides scholarships to SC students in Odisha for their higher education.",
+  "url": "http://odisha.gov.in/",
+  "categories": ["Schedule Caste"]
+},
+{
+  "name": "Uttar Pradesh Scholarship for Minority Girls",
+  "shortDetail": "Support for minority girls in UP.",
+  "fullDetail": "This scheme provides scholarships to minority girl students in Uttar Pradesh for pursuing higher education.",
+  "url": "http://scholarship.up.nic.in/",
+  "categories": ["Minority"]
+},
+{
+  "name": "Post-Matric Scholarship for ST Students in Madhya Pradesh",
+  "shortDetail": "Financial aid for ST students in Madhya Pradesh.",
+  "fullDetail": "This scheme provides scholarships to ST students in Madhya Pradesh for pursuing higher education.",
+  "url": "https://mpwelfare.nic.in/",
+  "categories": ["Schedule Tribe"]
+},
+{
+  "name": "Scholarship for Children of Sanitation Workers",
+  "shortDetail": "Support for children of sanitation workers.",
+  "fullDetail": "This scheme offers financial assistance to children of sanitation workers to promote their education.",
+  "url": "http://www.msp.gov.in/",
+  "categories": ["Working Professional"]
+},
+{
+  "name": "National Fellowship for OBC Students",
+  "shortDetail": "Fellowship for OBC students pursuing research.",
+  "fullDetail": "This fellowship provides financial support to OBC students for pursuing M.Phil and Ph.D. courses.",
+  "url": "https://ugc.ac.in/",
+  "categories": ["OBCs"]
+}
   ]
   
