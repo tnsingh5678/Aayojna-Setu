@@ -42,5 +42,6 @@ const newUserSchema = new mongoose.Schema({
 }, { timestamps: true }); // Optionally add timestamps for createdAt and updatedAt
 
 const NewUser = mongoose.model('NewUser', newUserSchema);
+// new
 
 export default NewUser;
