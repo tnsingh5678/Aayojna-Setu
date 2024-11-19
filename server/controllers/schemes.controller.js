@@ -1,114 +1,157 @@
-import app from "../app";
-import NewUser from "../models/newuser";
-import Schemes from "../models/schemes.models";
-import redis from "redis";
+// import app from "../app.js";
+// import NewUser from "../models/newuser.js";
+// import Schemes from "../models/schemes.models.js";
+// //import client from "../redis.js";
+// import Redis from "ioredis";
 
-const redisClient = redis.createClient();
+// const redisClient = Redis.createClient();
+// await redisClient.connect();
+// // async function init(){
+// //     client.set("user:4","Singh")
+// //     const result = await client.get("user:4")
 
-// findByCategory (fixing usage of categories array and adding error handling)
-const findByCategory = async (index) => {
-    try {
-        const user = await NewUser.find({ categories: { $in: [index] } });
-        return user;
-    } catch (error) {
-        console.error("Error finding user by category:", error);
-        throw new Error("Failed to fetch user by category");
-    }
-};
+// //     console.log(result)
+// // }
+// // init();
 
-// SchemesArray (fixing bitmask logic and caching)
-const SchemesArray = async (index) => {
-    try {
-        const schemes = await Schemes.find({ categories: { $in: [index] } });
-        return schemes;
-    } catch (error) {
-        console.error("Error fetching schemes by category:", error);
-        throw new Error("Failed to fetch schemes");
-    }
-};
+// //Utility function to create a cache key based on the search parameters
+// const createCacheKey = (categories) => {
+//     return `schemes:${categories.join(',')}`;
+// };
 
-app.post("/newscheme", async (req, res) => {
-    const scheme = req.body;
-    const categories = scheme.categories;
-    const v = [];
+// //findByCategory (fixing usage of categories array and adding error handling)
+// const findByCategory = async (index) => {
+//     try {
+//         const user = await NewUser.find({ categories: { $in: [index] } });
+//         return user;
+//     } catch (error) {
+//         console.error("Error finding user by category:", error);
+//         throw new Error("Failed to fetch user by category");
+//     }
+// };
 
-    // Collect category indexes where category is 1 (bitmasking logic)
-    for (let i = 0; i < categories.length; i++) {
-        if (categories[i] === 1) {
-            v.push(i);
-        }
-    }
+// // SchemesArray (fixing bitmask logic and caching)
+// const SchemesArray = async (index) => {
+//     try {
+//         const schemes = await Schemes.find({ categories: { $in: [index] } });
+//         return schemes;
+//     } catch (error) {
+//         console.error("Error fetching schemes by category:", error);
+//         throw new Error("Failed to fetch schemes");
+//     }
+// };
 
-    let users = [];
-    for (let i = 0; i < v.length; i++) {
-        const usersInCategory = await findByCategory(v[i]);
-        users = [...users, ...usersInCategory];
-    }
+// // Schemes retrieval with caching logic
+// app.get("/schemes", async (req, res) => {
+//     const categories = req.body;  // Assume it's an array of category indexes
 
-    // Here, you'd want to send a notification to all users (real-time using sockets or Redis)
-    const notification = { message: "New scheme generated", schemeDetails: scheme };
+//     // Create a unique cache key based on categories
+//     const cacheKey = createCacheKey(categories);
 
-    // Example Redis caching (store scheme for 24 hours)
-    redisClient.setEx("scheme_" + scheme.id, 86400, JSON.stringify(scheme));
+//     // Check if the result is already cached in Redis
+//     const cachedSchemes = await redisClient.get(cacheKey);
 
-    return res.send(notification);
-});
+//     if (cachedSchemes) {
+//         // Return the cached data if available
+//         console.log("Returning cached schemes.");
+//         return res.send(JSON.parse(cachedSchemes));
+//     }
 
-// Schemes retrieval (with caching)
-app.get("/schemes", async (req, res) => {
-    const categories = req.body;
-    const v = [];
+//     // If not cached, fetch data from the database
+//     const v = [];
 
-    for (let i = 0; i < categories.length; i++) {
-        if (categories[i] === 1) {
-            v.push(i);
-        }
-    }
+//     for (let i = 0; i < categories.length; i++) {
+//         if (categories[i] === 1) {
+//             v.push(i);
+//         }
+//     }
 
-    let schemes = [];
-    for (let i = 0; i < v.length; i++) {
-        const schemesInCategory = await SchemesArray(v[i]);
-        schemes = [...schemes, ...schemesInCategory];
-    }
+//     let schemes = [];
+//     for (let i = 0; i < v.length; i++) {
+//         const schemesInCategory = await SchemesArray(v[i]);
+//         schemes = [...schemes, ...schemesInCategory];
+//     }
 
-    // Example: Store schemes in cache for faster access
-    redisClient.setEx("schemes", 86400, JSON.stringify(schemes));
+//     // Cache the retrieved schemes in Redis for future use
+//     redisClient.setEx(cacheKey, 86400, JSON.stringify(schemes));  // Cache for 24 hours
 
-    return res.send(schemes);
-});
+//     return res.send(schemes);
+// });
 
-app.get("/userschemes", async (req, res) => {
-    const indexes = req.body;
-    const userId = req.id;
-    const user = await NewUser.findById(userId);
+// // Newscheme endpoint (create and update cache)
+// app.post("/newscheme", async (req, res) => {
+//     const scheme = req.body;
+//     const categories = scheme.categories;
+//     const v = [];
 
-    if (user.schemes) {
-        return res.send(user.schemes);
-    }
+//     // Collect category indexes where category is 1 (bitmasking logic)
+//     for (let i = 0; i < categories.length; i++) {
+//         if (categories[i] === 1) {
+//             v.push(i);
+//         }
+//     }
 
-    let schemes = [];
-    for (let i = 0; i < indexes.length; i++) {
-        const scheme = await Schemes.findOne({ categories: { $in: [indexes[i]] } });
-        schemes.push(scheme);
-    }
+//     let users = [];
+//     for (let i = 0; i < v.length; i++) {
+//         const usersInCategory = await findByCategory(v[i]);
+//         users = [...users, ...usersInCategory];
+//     }
 
-    // Store schemes in Redis for caching (24-hour expiration)
-    user.schemes = schemes;
-    await NewUser.findByIdAndUpdate(userId, user);
-    redisClient.setEx(`user_schemes_${userId}`, 86400, JSON.stringify(schemes));
+//     // Here, you'd want to send a notification to all users (real-time using sockets or Redis)
+//     const notification = { message: "New scheme generated", schemeDetails: scheme };
 
-    return res.send(schemes);
-});
+//     // Invalidate or update the relevant cache (if necessary)
+//     const cacheKey = createCacheKey(categories);
+//     redisClient.del(cacheKey);  // Delete the old cache if it's there, to force a refresh on next request
 
-app.post("/allscheme", async (req, res) => {
-    let schemes = [];
-    for (let i = 0; i < 10; i++) {
-        const scheme = await Schemes.findOne({ categories: { $in: [i] } });
-        schemes.push(scheme);
-    }
+//     // Example Redis caching (store scheme for 24 hours)
+//     redisClient.setEx("scheme_" + scheme.id, 86400, JSON.stringify(scheme));
 
-    // Store all schemes in Redis cache
-    redisClient.setEx("all_schemes", 86400, JSON.stringify(schemes));
+//     return res.send(notification);
+// });
 
-    return res.send(schemes);
-});
+// // Userschemes retrieval with caching (24-hour cache)
+// app.get("/userschemes", async (req, res) => {
+//     const indexes = req.body;
+//     const userId = req.id;
+//     const user = await NewUser.findById(userId);
+
+//     // Check if user schemes are already cached in Redis
+//     const userCacheKey = `user_schemes_${userId}`;
+//     const cachedUserSchemes = await redisClient.get(userCacheKey);
+
+//     if (cachedUserSchemes) {
+//         console.log("Returning cached user schemes.");
+//         return res.send(JSON.parse(cachedUserSchemes));
+//     }
+
+//     // If not cached, fetch data from the database
+//     let schemes = [];
+//     for (let i = 0; i < indexes.length; i++) {
+//         const scheme = await Schemes.findOne({ categories: { $in: [indexes[i]] } });
+//         schemes.push(scheme);
+//     }
+
+//     // Cache the schemes for this user
+//     redisClient.setEx(userCacheKey, 86400, JSON.stringify(schemes));  // Cache for 24 hours
+
+//     // Update user schemes in the database
+//     user.schemes = schemes;
+//     await NewUser.findByIdAndUpdate(userId, user);
+
+//     return res.send(schemes);
+// });
+
+// // Allscheme endpoint (cache all schemes)
+// app.post("/allscheme", async (req, res) => {
+//     let schemes = [];
+//     for (let i = 0; i < 10; i++) {
+//         const scheme = await Schemes.findOne({ categories: { $in: [i] } });
+//         schemes.push(scheme);
+//     }
+
+//     // Cache all schemes
+//     redisClient.setEx("all_schemes", 86400, JSON.stringify(schemes));  // Cache for 24 hours
+
+//     return res.send(schemes);
+// });
